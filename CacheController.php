@@ -1,5 +1,5 @@
 <?php 
-class Cache implements CacheInterface 
+class CacheController implements CacheInterfaces 
 {
     
     private $duration=60*5;
@@ -31,7 +31,7 @@ class Cache implements CacheInterface
 
 }
 
-$file = new Cache;
+$file = new CacheController;
 if(!file_exists('result')) { // first time call check file present or not
 $file->set('result',$result , 60*5);
 }

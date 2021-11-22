@@ -1,7 +1,7 @@
 <?php
 include 'Cache.php';
 include 'CacheController.php';
-interface CacheInterface
+interface CacheInterfaces
 {
     /**
      * Store a mixed type value in cache for a certain amount of seconds.
@@ -25,7 +25,7 @@ interface CacheInterface
     public function get(string $key);
 }
 
-class CacheController
+class CacheInterface
 {
     private $cache;
 
