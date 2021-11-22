@@ -41,4 +41,3 @@ $file->set('result',$result , 60*5);
 else{
 $file->get('result'); // retrieve cache data last 5 mins
 }
-?>

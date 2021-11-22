@@ -54,5 +54,3 @@ $payload = json_encode($request);
     }
 
 // Use Guzzle library for API requests.
-
-?>
